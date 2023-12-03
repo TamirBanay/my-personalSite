@@ -1,0 +1,51 @@
+nav {
+  padding: 10px;
+  position: absolute;
+  width: 95%;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav li a {
+  font-size: x-large;
+}
+
+.name {
+  width: 200px;
+  color: #344054;
+  font-size: 20px;
+  font-weight: 700;
+  /* font-family: Roboto; */
+  line-height: 36px;
+  text-align: start;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  size: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #0077b5; /* Color you want on hover, for example, LinkedIn blue */
+}
+
+.routers {
+  font-size: large;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.routers :hover {
+  text-decoration: none;
+  color: #344054;
+}
