@@ -6,7 +6,7 @@ function Navbar() {
   // Component code
   return (
     <nav>
-      <ul>
+      <ul >
         <li className="name">
           {/* <a href={myCV} download="Tamir Banay CV.pdf"> */}
           Tamir Banay {/* </a> */}
