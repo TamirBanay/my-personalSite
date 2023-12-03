@@ -1,8 +1,32 @@
 import React from "react";
 import myImg from "../../images/image.png";
+import myImgMobile from "../../images/image-mobile.png";
 import "./Intro.css";
+import { useEffect } from "react";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from "recoil";
+import { _screenSize } from "../../services/atom";
 function Intro() {
-  // Component code
+  const [screenSize, setScreenSize] = useRecoilState(_screenSize);
+
+  const updateScreenSize = () => {
+    const newWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    setScreenSize(newWidth);
+  };
+
+  useEffect(() => {
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  }, []);
   return (
     <div className="main-intro">
       <div className="text-left">
@@ -22,7 +46,7 @@ function Intro() {
           </div>
         </div>
       </div>
-      <img className="img-rigth" src={myImg} />
+      <img className="img-rigth" src={screenSize > 480 ? myImg : myImgMobile} />
     </div>
   );
 }

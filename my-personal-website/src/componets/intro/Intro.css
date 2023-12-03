@@ -69,8 +69,41 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  border: solid 1px #344054;
 }
 .img-rigth {
   width: 50%;
   height: 629px;
+}
+@media screen and (max-width: 480px) {
+  .main-intro {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .img-rigth {
+    width: 375px;
+    height: 629px;
+  }
+  .titels {
+    width: 327px;
+    height: 46px;
+    padding-left: 24px;
+    width: 600;
+    size: 20px;
+    line-height: 23.44px;
+  }
+  .all-text {
+    width: 327px;
+    padding-left: 24px;
+  }
+  .first-text {
+    width: 327px;
+    font-size: 52px;
+    line-height: 52px;
+    width: 600;
+  }
+  .img-rigth {
+    width: 100%;
+  }
 }
