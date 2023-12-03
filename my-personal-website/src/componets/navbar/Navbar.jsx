@@ -1,9 +1,34 @@
 import React from "react";
 import { ScrollLink } from "react-scroll";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
 import "./Navbar.css";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from "recoil";
+import { _screenSize } from "../../services/atom";
+import menuIcon from "../../images/Vector.png";
+
 function Navbar() {
-  // Component code
+  const [screenSize, setScreenSize] = useRecoilState(_screenSize);
+
+  const updateScreenSize = () => {
+    const newWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    setScreenSize(newWidth);
+  };
+
+  useEffect(() => {
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  }, []);
   return (
     <nav>
       <ul>
@@ -11,18 +36,24 @@ function Navbar() {
           {/* <a href={myCV} download="Tamir Banay CV.pdf"> */}
           Tamir Banay {/* </a> */}
         </li>
-        <div className="routers">
-          <Link to="projects" smooth={true} duration={500}>
-            <li>Projects</li>
-          </Link>
+        {document.documentElement.clientWidth > 480 ? (
+          <div className="routers">
+            <Link to="projects" smooth={true} duration={500}>
+              <li>Projects</li>
+            </Link>
 
-          <Link to="about-contaoner" smooth={true} duration={500}>
-            <li>About</li>
-          </Link>
-          <Link to="main-skills-contaoner" smooth={true} duration={500}>
-            <li>Contact</li>
-          </Link>
-        </div>
+            <Link to="about-contaoner" smooth={true} duration={500}>
+              <li>About</li>
+            </Link>
+            <Link to="main-skills-contaoner" smooth={true} duration={500}>
+              <li>Contact</li>
+            </Link>
+          </div>
+        ) : (
+          <div className="menu-icon">
+            <img src={menuIcon} />
+          </div>
+        )}
       </ul>
     </nav>
   );

@@ -1,26 +1,23 @@
 nav {
-  padding: 10px;
   position: absolute;
-  width: 95%;
-  top: 0;
-  left: 0;
+  width: 90%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 nav li a {
   font-size: x-large;
 }
 
 .name {
-  width: 200px;
+  width: 50%;
   color: #344054;
   font-size: 20px;
   font-weight: 700;
-  /* font-family: Roboto; */
   line-height: 36px;
   text-align: start;
 }
@@ -39,13 +36,27 @@ nav a:hover {
 
 .routers {
   font-size: large;
-  width: 250px;
+  width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-self: flex-end;
 }
 .routers :hover {
   text-decoration: none;
   color: #344054;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    width: 100%;
+    background-color: #2997f0;
+  }
+  .name {
+    color: white;
+    margin-left: 24px;
+  }
+  .menu-icon {
+    margin-right: 24px;
+    margin-top: 10px;
+  }
 }
