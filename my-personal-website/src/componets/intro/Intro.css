@@ -34,7 +34,7 @@
 .about-intro {
   margin-top: 34px;
   color: var(--font-medium-emphasis, #828282);
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -74,6 +74,9 @@
   gap: 12px;
   border: solid 2px #344054;
   font-size: 18px;
+  font-weight: 600;
+  color: #25282b;
+  background-color: white;
 }
 .img-rigth {
   width: 50%;
@@ -116,5 +119,9 @@ a {
   .buttons {
     gap: 16px;
     padding-top: 32px;
+  }
+  .linkedinButton {
+    font-weight: 600;
+    color: #25282b;
   }
 }
