@@ -3,6 +3,7 @@ import Navbar from "./componets/navbar/Navbar";
 import Intro from "./componets/intro/Intro";
 import MyProjects from "./componets/myProjects/MyProjectss";
 import AboutMe from "./componets/AboutMe/AboutMe";
+import ContactMe from "./componets/ContactMe/ContactMe";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Intro />
       <MyProjects />
       <AboutMe />
+      <ContactMe />
     </div>
   );
 }
