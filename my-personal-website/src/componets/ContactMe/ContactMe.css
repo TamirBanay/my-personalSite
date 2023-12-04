@@ -91,3 +91,14 @@ input {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (max-width: 480px) {
+  .ContactMe-inputs {
+    align-items: center;
+  }
+  input {
+    width: 327px;
+  }
+  .message {
+    width: 327px;
+  }
+}

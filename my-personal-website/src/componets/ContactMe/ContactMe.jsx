@@ -6,7 +6,19 @@ function ContactMe() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const moveToLinkEdin = () => {
+    window.location.href = "https://www.linkedin.com/in/tamir-banay-0436b31b2/";
+  };
+  const moveToMail = () => {
+    window.location.href = "mailto:banay9329@gmail.com";
+  };
+  const moveToGithub = () => {
+    window.location.href = "https://github.com/TamirBanay";
+  };
+  const moveToWhatsApp = () => {
+    const phoneNumber = "0525908415"; // Your phone number in international format
+    window.location.href = `https://wa.me/${phoneNumber}`;
+  };
   return (
     <div className="main-ContactMe">
       <div className="ContactMe-title">
@@ -53,6 +65,7 @@ function ContactMe() {
       <div className="iconsAndCopyright">
         <div className="icons">
           <svg
+            onClick={moveToGithub}
             xmlns="http://www.w3.org/2000/svg"
             width="48"
             height="48"
@@ -65,6 +78,7 @@ function ContactMe() {
             />
           </svg>
           <svg
+            onClick={moveToLinkEdin}
             xmlns="http://www.w3.org/2000/svg"
             width="38"
             height="38"
@@ -77,6 +91,7 @@ function ContactMe() {
             />
           </svg>
           <svg
+            onClick={moveToMail}
             xmlns="http://www.w3.org/2000/svg"
             width="48"
             height="48"
