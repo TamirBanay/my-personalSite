@@ -3,6 +3,8 @@ import myImg from "../../images/image.png";
 import myImgMobile from "../../images/image-mobile.png";
 import "./Intro.css";
 import { useEffect } from "react";
+import myCV from "./Tamir-Banay-FS&Front-end.pdf";
+
 import {
   RecoilRoot,
   atom,
@@ -41,8 +43,12 @@ function Intro() {
             developer in a dynamic environment.
           </div>
           <div className="buttons">
-            <button className="cvButton">Download CV</button>
-            <button className="linkedinButton">LinkedIns</button>
+            <a href={myCV} download="Tamir Banay CV.pdf">
+              <button className="cvButton">Download CV</button>
+            </a>
+            <a href="https://www.linkedin.com/in/tamir-banay-0436b31b2/">
+              <button className="linkedinButton">LinkedIns</button>
+            </a>
           </div>
         </div>
       </div>
