@@ -51,8 +51,8 @@
   background-color: #2997f0;
   border: #2997f0;
   color: white;
-  font-weight: 500;
-  size: 18px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 18px;
   font: Roboto;
   margin-right: 16px;
@@ -64,12 +64,12 @@
   height: 48px;
   border-radius: 8px;
   padding: 8px 24px;
-  border: 2px;
   padding: 8px, 24px, 8px, 24px;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  border: solid 1px #344054;
+  border: solid 2px #344054;
+  font-size: 18px;
 }
 .img-rigth {
   width: 50%;
