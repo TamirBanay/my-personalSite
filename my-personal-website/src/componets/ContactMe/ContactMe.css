@@ -95,7 +95,7 @@ input {
 }
 @media screen and (max-width: 480px) {
   .main-ContactMe {
-    margin-top: 155%;
+    margin-top: 180%;
   }
   .ContactMe-inputs {
     align-items: center;

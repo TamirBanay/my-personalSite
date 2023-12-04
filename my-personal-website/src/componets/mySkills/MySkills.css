@@ -1,13 +1,14 @@
 .mySkills-main {
   display: flex;
-  padding: 80px 0px;
   flex-direction: column;
   align-items: flex-start;
   background-color: #f9faff;
   height: 608px;
+  width: 90%;
   align-items: center;
   gap: 64px;
-  margin-left: 0;
+  margin-left: 80px;
+  margin-top: 10%;
 }
 .mySkills-main-title {
   color: var(--gray-700, #344054);
@@ -21,6 +22,7 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
+
 }
 .mySkills-boxs {
   width: 400px;
