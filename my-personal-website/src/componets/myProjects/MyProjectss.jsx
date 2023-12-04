@@ -49,7 +49,7 @@ function myProjects() {
             View Project
           </button>
         </div>
-        <img className="project-img" src={myMovieAppImg} />
+        <img className="project-img-left" src={myMovieAppImg} />
       </div>
 
       {/* --------------------------------------------- */}
@@ -135,7 +135,7 @@ function myProjects() {
             View Project
           </button>
         </div>
-        <img className="project-img" src={DataBaseImg} />
+        <img className="project-img-left" src={DataBaseImg} />
       </div>
       {/* --------------------------------------------- */}
       {document.documentElement.clientWidth > 480 ? (

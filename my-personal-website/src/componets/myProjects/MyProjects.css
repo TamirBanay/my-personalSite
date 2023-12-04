@@ -27,6 +27,7 @@
   border-radius: 24px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .project-text {
   width: 496px;
   height: 524px;
@@ -72,6 +73,21 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+}
+.project-img-left {
+  width: 580px;
+  height: 526px;
+  flex-shrink: 0;
+  border-left: 1px solid #b3b3b3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media screen and (max-width: 480px) {
   .main-projects {
@@ -126,6 +142,19 @@
   .project-img {
     width: 327px;
     height: 50%;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-left: 1px solid #b3b3b3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .project-img-left {
+    width: 327px;
+
+    height: 50%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     border-left: 1px solid #b3b3b3;
