@@ -5,6 +5,7 @@ import MyProjects from "./componets/myProjects/MyProjectss";
 import AboutMe from "./componets/AboutMe/AboutMe";
 import ContactMe from "./componets/ContactMe/ContactMe";
 import Myskills from "./componets/mySkills/Myskills";
+import Footer from "./componets/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutMe />
       <Myskills />
       <ContactMe />
+      <Footer />
     </div>
   );
 }
