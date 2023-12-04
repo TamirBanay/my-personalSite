@@ -75,6 +75,9 @@
   width: 50%;
   height: 629px;
 }
+a {
+  text-decoration: none;
+}
 @media screen and (max-width: 480px) {
   .main-intro {
     display: flex;
