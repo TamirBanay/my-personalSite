@@ -57,11 +57,13 @@ a {
 }
 @media screen and (max-width: 480px) {
   .aboutMe-main {
+    /* padding-top: 0px; */
+
     display: flex;
     flex-direction: column-reverse;
     width: 375px;
     height: 1371px;
-    padding: 48px 0px;
+    padding: 0px 0px;
     gap: 40px;
   }
   .aboutMe-text {
