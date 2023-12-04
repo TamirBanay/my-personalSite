@@ -51,6 +51,7 @@
 }
 a {
   margin-top: auto;
+  width: 156px;
 }
 @media screen and (max-width: 480px) {
   .aboutMe-main {
