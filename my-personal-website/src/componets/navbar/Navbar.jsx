@@ -32,20 +32,17 @@ function Navbar() {
   return (
     <nav>
       <ul>
-        <li className="name">
-          {/* <a href={myCV} download="Tamir Banay CV.pdf"> */}
-          Tamir Banay {/* </a> */}
-        </li>
+        <li className="name">Tamir Banay</li>
         {document.documentElement.clientWidth > 480 ? (
           <div className="routers">
-            <Link to="projects" smooth={true} duration={500}>
+            <Link to="main-projects" smooth={true} duration={500}>
               <li>Projects</li>
             </Link>
 
-            <Link to="about-contaoner" smooth={true} duration={500}>
+            <Link to="aboutMe-main" smooth={true} duration={500}>
               <li>About</li>
             </Link>
-            <Link to="main-skills-contaoner" smooth={true} duration={500}>
+            <Link to="main-ContactMe" smooth={true} duration={500}>
               <li>Contact</li>
             </Link>
           </div>

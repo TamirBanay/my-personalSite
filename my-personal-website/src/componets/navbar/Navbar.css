@@ -1,6 +1,7 @@
 nav {
   position: absolute;
   width: 90%;
+  margin-left: 120px;
 }
 
 nav ul {
@@ -48,15 +49,16 @@ nav a:hover {
 }
 @media screen and (max-width: 480px) {
   nav {
-    width: 100%;
+    width: 375px;
     background-color: #2997f0;
+    margin-left: 0px;
   }
   .name {
     color: white;
-    margin-left: 24px;
+    padding-left: 24px;
   }
   .menu-icon {
-    margin-right: 24px;
-    margin-top: 10px;
+    padding-right: 24px;
+    padding-top: 10px;
   }
 }
