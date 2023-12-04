@@ -1,0 +1,82 @@
+.mySkills-main {
+  display: flex;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9faff;
+  height: 608px;
+  align-items: center;
+  gap: 64px;
+  margin-left: 0;
+}
+.mySkills-main-title {
+  color: var(--gray-700, #344054);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 60px */
+  letter-spacing: -0.9px;
+}
+.boxs {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.mySkills-boxs {
+  width: 400px;
+  height: 408px;
+  padding: 40px;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--white, #fff);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.mySkills-img {
+  width: 92px;
+  height: 92px;
+  border-radius: 100px;
+}
+.mySkills-title {
+  color: #25282b;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 40px */
+  letter-spacing: -0.6px;
+}
+.mySkills-list {
+  color: #828282;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+@media screen and (max-width: 480px) {
+  .mySkills-main {
+    margin-left: 0px;
+  }
+
+  .mySkills-boxs {
+    width: 215px;
+    height: 408;
+    gap: 10px;
+    height: 1, 304px;
+  }
+  .boxs {
+    width: 275px;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px, 40px, 0px, 40px;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+  }
+}

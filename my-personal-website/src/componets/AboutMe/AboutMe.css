@@ -4,8 +4,10 @@
   width: 1, 036px;
   height: 646px;
   gap: 60px;
-  padding: 82px;
+  padding-left: 202px;
   align-items: flex-end;
+  background-color: #f9faff;
+  padding-top: 80px;
 }
 .aboutMe-img {
   width: 389px;

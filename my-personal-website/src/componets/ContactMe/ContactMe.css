@@ -3,9 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 52px;
   align-self: stretch;
   padding: 80px 0px;
+  background-color: #f9faff;
+  margin-top: 0;
 }
 .ContactMe-title {
   color: #344054;
@@ -92,6 +94,9 @@ input {
   line-height: normal;
 }
 @media screen and (max-width: 480px) {
+  .main-ContactMe {
+    margin-top: 165%;
+  }
   .ContactMe-inputs {
     align-items: center;
   }

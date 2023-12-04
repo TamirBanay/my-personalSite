@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: #f9faff;
+  /* margin-left: 120px; */
 }
 .text-left {
   width: 50%;
@@ -13,10 +15,13 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 23.44px;
+  padding-left: 120px;
+
 }
 .all-text {
   width: 508px;
   height: 154px;
+  padding-left: 120px;
 }
 .first-text {
   color: #344054;
