@@ -50,6 +50,8 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 27px */
+  background-color: white;
+
 }
 a {
   margin-top: auto;
