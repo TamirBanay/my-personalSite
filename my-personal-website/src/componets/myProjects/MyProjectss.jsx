@@ -114,10 +114,10 @@ function myProjects() {
         <div className="project-text">
           <div className="project-title">Database System</div>
           <div className="project-description">
-            This project showcases JAVA to MYSQL integration using the Sakila
-            Database.  It includes SQL credentials and a pre-embedded connector
-            for easy setup.  Explore real-time database operations and
-            contribute to enriching the learning experience.{" "}
+            This project seamlessly integrates Java with MySQL using the Sakila
+            Database, offering built-in SQL credentials, efficient connectors
+            for easy setup, and robust real-time database interaction
+            capabilities.
           </div>
           <button className="prject-link" onClick={moveToDatabaseSystemTask}>
             <svg
@@ -145,10 +145,10 @@ function myProjects() {
           <div className="project-text">
             <div className="project-title">Alarm System</div>
             <div className="project-description">
-              The Home Alert System utilizes an ESP8266 microcontroller and LED
-              strip to visually signal emergency alerts, benefiting the deaf
-              community. Its user-friendly setup and customizable city targeting
-              via a web interface enhance safety and convenience.
+              The Home Alert System features an ESP8266 microcontroller and LED
+              strip for visual emergency alerts, designed for the deaf
+              community. It offers easy setup, web-based city customization, and
+              improved safety.
             </div>
             <button className="prject-link" onClick={moveToAlermSystem}>
               <svg
@@ -172,10 +172,9 @@ function myProjects() {
           <div className="project-text">
             <div className="project-title">Alarm System</div>
             <div className="project-description">
-              The Home Alert System utilizes an ESP8266 microcontroller and LED
-              strip to visually signal emergency alerts, benefiting the deaf
-              community. Its user-friendly setup and customizable city targeting
-              via a web interface enhance safety and convenience.
+              Home Alert System with ESP8266 and LED strip provides visual
+              emergency alerts for the deaf, featuring simple setup, web
+              customization, and enhanced safety.
             </div>
             <button className="prject-link" onClick={moveToAlermSystem}>
               <svg

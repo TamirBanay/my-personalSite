@@ -3,7 +3,6 @@
   flex-direction: row;
   width: 100%;
   background-color: #f9faff;
-  /* margin-left: 120px; */
 }
 .text-left {
   width: 50%;
@@ -16,7 +15,6 @@
   font-size: 20px;
   line-height: 23.44px;
   padding-left: 120px;
-
 }
 .all-text {
   width: 508px;
@@ -117,5 +115,6 @@ a {
   }
   .buttons {
     gap: 16px;
+    padding-top: 32px;
   }
 }
