@@ -4,10 +4,11 @@
   width: 1, 036px;
   height: 646px;
   gap: 60px;
-  padding-left: 202px;
+  /* padding-left: 202px; */
   align-items: flex-end;
   background-color: #f9faff;
   padding-top: 80px;
+  /* margin-left:0%; */
 }
 .aboutMe-img {
   width: 389px;
@@ -101,6 +102,9 @@ a {
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1440px) {
+  .aboutMe-main {
+    margin-left: 10%;
+  }
   .aboutMe-text {
     /* background-color: #25282b; */
     gap: 30px;
