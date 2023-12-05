@@ -114,3 +114,8 @@ a {
     height: fit-content;
   }
 }
+@media screen and (min-width: 1600px) {
+  .aboutMe-main {
+    margin-left: 15%;
+  }
+}
