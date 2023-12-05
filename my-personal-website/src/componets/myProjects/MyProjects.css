@@ -62,9 +62,9 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  font-weight: 500;
+  font-weight: 600;
   background-color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .project-img {
