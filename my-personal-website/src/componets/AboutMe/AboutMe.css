@@ -57,6 +57,7 @@ a {
   margin-top: auto;
   width: 156px;
 }
+/* mobile responsive */
 @media screen and (max-width: 480px) {
   .aboutMe-main {
     display: flex;
@@ -100,7 +101,12 @@ a {
     height: 535px;
     align-self: center;
   }
+  .aboutMe-text-button {
+    margin-bottom: 5%;
+  }
 }
+/*ipad responsive */
+
 @media screen and (min-width: 480px) and (max-width: 1440px) {
   .aboutMe-main {
     margin-left: 0%;
@@ -118,6 +124,8 @@ a {
     height: fit-content;
   }
 }
+/*ulrta wide responsive */
+
 @media screen and (min-width: 1600px) {
   .aboutMe-main {
     justify-content: center;
