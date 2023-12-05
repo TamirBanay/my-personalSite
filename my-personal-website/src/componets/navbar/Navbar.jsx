@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollLink } from "react-scroll";
 import { Link } from "react-scroll";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import {
   RecoilRoot,
@@ -15,7 +15,16 @@ import menuIcon from "../../images/Vector.png";
 
 function Navbar() {
   const [screenSize, setScreenSize] = useRecoilState(_screenSize);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const updateScreenSize = () => {
     const newWidth =
       window.innerWidth ||
@@ -30,26 +39,38 @@ function Navbar() {
     return () => window.removeEventListener("resize", updateScreenSize);
   }, []);
   return (
-    <nav>
+    <nav className={hasScrolled ? "nav-scrolled" : ""}>
       <ul>
-        <li className="name">Tamir Banay</li>
+        <li className="name">
+          <Link
+            to="main-intro"
+            smooth={true}
+            duration={500}
+            className="tamir-banay-link"
+          >
+            Tamir Banay
+          </Link>
+        </li>
         {document.documentElement.clientWidth > 480 ? (
-          <div className="routers">
-            <Link to="main-projects" smooth={true} duration={500}>
-              <li>Projects</li>
-            </Link>
-
-            <Link to="aboutMe-main" smooth={true} duration={500}>
-              <li>About</li>
-            </Link>
-            <Link to="main-ContactMe" smooth={true} duration={500}>
-              <li>Contact</li>
-            </Link>
+          <div className={hasScrolled ? "routers-scrolled" : "routers"}>
+            <li>
+              <Link to="main-projects" smooth={true} duration={500}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="aboutMe-main" smooth={true} duration={500}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="main-ContactMe" smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
           </div>
         ) : (
-          <div className="menu-icon">
-            <img src={menuIcon} />
-          </div>
+          <div className="menu-icon">{<img src={menuIcon} />}</div>
         )}
       </ul>
     </nav>

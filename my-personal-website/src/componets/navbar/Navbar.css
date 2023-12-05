@@ -1,13 +1,17 @@
 nav {
-  position: absolute;
-  width: 90%;
-  margin-left: 120px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: color 0.3s;
+  padding: 0px 120px 0px;
 }
-
+nav a {
+  color: #000;
+}
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-b; */
   padding: 0;
 }
 nav li a {
@@ -22,43 +26,102 @@ nav li a {
   line-height: 36px;
   text-align: start;
 }
+.tamir-banay-link {
+  color: #344054; /* Black color */
+  font-size: 20px;
+}
+.tamir-banay-link:hover {
+  text-decoration: none;
+  color: #0077b5; /* Color you want on hover, for example, LinkedIn blue */
+}
+
+.nav-scrolled a {
+  color: #344054; /* The color you want after scrolling */
+}
+
+.nav-scrolled {
+  background-color: #000;
+  border-bottom: 1px solid var(--palette-neutral-300, #b3b3b3);
+  background: var(--white, #fff);
+  width: 100%;
+  height: 56px;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+}
 
 nav a {
-  color: white;
+  color: #e8f4fb;
   text-decoration: none;
   size: 20px;
   font-weight: 500;
+  transition: color 0.3; /* Smooth transition for color change */
 }
 
 nav a:hover {
   text-decoration: underline;
   color: #0077b5; /* Color you want on hover, for example, LinkedIn blue */
 }
+.nav-scrolled a {
+  color: #344054;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  width: 30%;
+}
 
 .routers {
   font-size: large;
-  width: 30%;
+  width: 318px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-self: flex-end;
+  gap: 48px;
+  margin-left: 10%;
 }
+.routers-scrolled {
+  font-size: large;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+.routers-scrolled :hover {
+  text-decoration: none;
+}
+
 .routers :hover {
   text-decoration: none;
   color: #344054;
 }
 @media screen and (max-width: 480px) {
   nav {
-    width: 375px;
+    position: absolute;
     background-color: #2997f0;
     margin-left: 0px;
+    padding: 0px 0px 0px;
+    width: 375px;
+    height: 68px;
   }
+  nav ul {
+    justify-content: space-between;
+    padding: 0px 24px 16px 24px;
+  }
+
   .name {
     color: white;
-    padding-left: 24px;
+    width: fit-content;
+    align-self: flex-start;
   }
   .menu-icon {
-    padding-right: 24px;
-    padding-top: 10px;
+    align-self: flex-end;
+  }
+  .tamir-banay-link {
+    color: #ffffff;
+  }
+  .nav-scrolled a {
+    color: #ffffff;
+    align-self: flex-start;
   }
 }

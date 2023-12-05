@@ -4,11 +4,11 @@
   width: 1, 036px;
   height: 646px;
   gap: 60px;
-  /* padding-left: 202px; */
+  justify-content: center;
+
   align-items: flex-end;
   background-color: #f9faff;
   padding-top: 80px;
-  /* margin-left:0%; */
 }
 .aboutMe-img {
   width: 389px;
@@ -103,7 +103,7 @@ a {
 }
 @media screen and (min-width: 480px) and (max-width: 1440px) {
   .aboutMe-main {
-    margin-left: 10%;
+    margin-left: 0%;
   }
   .aboutMe-text {
     /* background-color: #25282b; */
@@ -120,6 +120,7 @@ a {
 }
 @media screen and (min-width: 1600px) {
   .aboutMe-main {
-    margin-left: 15%;
+    justify-content: center;
+    /* margin-left: 25%; */
   }
 }
