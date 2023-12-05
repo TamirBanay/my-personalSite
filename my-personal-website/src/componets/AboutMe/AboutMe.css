@@ -51,7 +51,6 @@
   font-weight: 600;
   line-height: 150%; /* 27px */
   background-color: white;
-
 }
 a {
   margin-top: auto;
@@ -59,8 +58,6 @@ a {
 }
 @media screen and (max-width: 480px) {
   .aboutMe-main {
-    /* padding-top: 0px; */
-
     display: flex;
     flex-direction: column-reverse;
     width: 375px;
@@ -101,5 +98,24 @@ a {
     width: 316.136px;
     height: 535px;
     align-self: center;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1440px) {
+  .aboutMe-text {
+    /* background-color: #25282b; */
+    gap: 30px;
+    width: 500px;
+  }
+  .aboutMe-text-title {
+    width: 350px;
+  }
+  .aboutMe-text-description {
+    width: 490px;
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .aboutMe-main {
+    margin-left: 15%;
   }
 }
