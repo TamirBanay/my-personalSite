@@ -53,6 +53,9 @@
   line-height: 150%; /* 27px */
   background-color: white;
 }
+.aboutMe-text-button:hover {
+  background-color: #f2f2f2;
+}
 a {
   margin-top: auto;
   width: 156px;

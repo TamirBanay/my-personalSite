@@ -61,6 +61,9 @@
   font: Roboto;
   margin-right: 16px;
 }
+.cvButton:hover {
+  background-color: #0276d5;
+}
 
 .linkedinButton {
   display: flex;
@@ -77,6 +80,9 @@
   font-weight: 600;
   color: #25282b;
   background-color: white;
+}
+.linkedinButton:hover {
+  background-color: #f2f2f2;
 }
 .img-rigth {
   width: 50%;

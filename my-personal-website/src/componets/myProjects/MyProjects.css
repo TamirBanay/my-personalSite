@@ -1,16 +1,17 @@
 .main-projects {
-  height: 2, 396px;
+  height: fit-content;
   width: 1, 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f9faff;
+  gap: 60px;
 }
 .project-main-title {
   text-align: center;
-  width: 80%;
-  height: 60px;
+  width: fit-content;
+  height: fit-content;
   font-weight: 600;
   font-size: 60px;
   line-height: 60px;
@@ -20,7 +21,6 @@
 .project {
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
   background: var(--white, #fff);
   height: 524px;
   border-radius: 24px;
@@ -32,15 +32,18 @@
   /* height: 524px; */
   padding: 126.5px 38.881px 125.5px 50.441px;
   justify-content: center;
-  align-items: center;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 32px;
 }
 .project-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
   color: #25282b;
-  margin-bottom: 32px;
 }
 .project-description {
   color: var(--font-medium-emphasis, #828282);
@@ -49,7 +52,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   height: fit-content;
 }
 .prject-link {
@@ -66,7 +69,9 @@
   background-color: white;
   font-size: 16px;
 }
-
+.prject-link:hover {
+  background-color: #f2f2f2;
+}
 .project-img {
   width: 580px;
   height: 526px;
@@ -93,45 +98,47 @@
 }
 @media screen and (max-width: 480px) {
   .main-projects {
-    margin-right: 0px;
-    width: 375px;
-    height: 3, 685px;
+    display: flex;
+    padding: 48px 24px;
+    flex-direction: column;
+    align-items: center;
+
     gap: 52px;
   }
+  .project {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    width: 327px;
+    height: 818px;
+    border-radius: 24px;
+    gap: 32px;
+    /* margin-bottom: 252px; */
+  }
   .project-main-title {
-    width: 80%;
+    width: fit-content;
     height: 52px;
     width: 600;
     font-size: 52px;
     line-height: 52px;
     letter-spacing: -1.5%;
-    margin-bottom: 0px;
   }
-  .project {
-    margin-bottom: 52px;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    width: 327px;
-    height: 737px;
-    border-radius: 24px;
-  }
+
   .project-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 268.11px;
-    height: 50%;
-    border-radius: 24px;
+    height: 407px;
+    width: 268.112px;
     gap: 32px;
     font-size: 40px;
-    padding: 29px 32px 29px;
+    padding: 0px 0px 0px 0px;
     color: #25282b;
   }
   .project-title {
     width: 257px;
-    height: 60px;
-    margin-bottom: 32px;
+    height: fit-content;
+    margin-bottom: 0px;
     font-size: 40px;
     font-weight: 700;
     line-height: 150%;
@@ -142,14 +149,14 @@
   .project-description {
     width: 268.11px;
     height: 162px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 0px;
   }
   .project-img {
     width: 327px;
-    height: 50%;
+    height: 379px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     border-top-left-radius: 0px;
@@ -159,8 +166,7 @@
   }
   .project-img-left {
     width: 327px;
-
-    height: 50%;
+    height: 379px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 24px;
