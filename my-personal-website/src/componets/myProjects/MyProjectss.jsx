@@ -114,10 +114,9 @@ function myProjects() {
         <div className="project-text">
           <div className="project-title">Database System</div>
           <div className="project-description">
-            This project seamlessly integrates Java with MySQL using the Sakila
-            Database, offering built-in SQL credentials, efficient connectors
-            for easy setup, and robust real-time database interaction
-            capabilities.
+            This project integrates Java and MySQL with the Sakila Database,
+            featuring built-in SQL credentials, efficient connectors, and
+            real-time database interaction.
           </div>
           <button className="prject-link" onClick={moveToDatabaseSystemTask}>
             <svg
@@ -172,9 +171,7 @@ function myProjects() {
           <div className="project-text">
             <div className="project-title">Alarm System</div>
             <div className="project-description">
-              Home Alert System with ESP8266 and LED strip provides visual
-              emergency alerts for the deaf, featuring simple setup, web
-              customization, and enhanced safety.
+       The Home Alert System uses an ESP8266 and LED strip for visual alerts, catering to the deaf community with web-based customization and easy setup for improved safety.
             </div>
             <button className="prject-link" onClick={moveToAlermSystem}>
               <svg

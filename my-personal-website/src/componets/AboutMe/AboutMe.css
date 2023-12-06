@@ -33,7 +33,7 @@
 }
 .aboutMe-text-description {
   width: 588px;
-  height: 144px;
+  height: fit-content;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -57,7 +57,6 @@
   background-color: #f2f2f2;
 }
 a {
-  margin-top: auto;
   width: 156px;
 }
 /* mobile responsive */
@@ -89,7 +88,7 @@ a {
   }
   .aboutMe-text-description {
     width: 327px;
-    height: 216px;
+    height: fit-content;
     color: var(--font-medium-emphasis, #828282);
     font-size: 24px;
     font-style: normal;
@@ -105,7 +104,6 @@ a {
     align-self: center;
   }
   .aboutMe-text-button {
-    margin-bottom: 5%;
   }
 }
 /*ipad responsive */
@@ -115,7 +113,6 @@ a {
     margin-left: 0%;
   }
   .aboutMe-text {
-    /* background-color: #25282b; */
     gap: 30px;
     width: 500px;
   }
@@ -132,6 +129,5 @@ a {
 @media screen and (min-width: 1600px) {
   .aboutMe-main {
     justify-content: center;
-    /* margin-left: 25%; */
   }
 }
