@@ -58,10 +58,9 @@
 }
 @media screen and (max-width: 480px) {
   .mySkills-main {
-    margin-right: 10px;
     align-items: center;
     padding: 48px 40px 48px;
-    height: 1, 504px;
+    background-color: red;
   }
 
   .mySkills-boxs {
@@ -69,7 +68,6 @@
     gap: 10px;
   }
   .boxs {
-    width: 275px;
     height: 295px;
     display: flex;
     flex-direction: column;
@@ -81,7 +79,6 @@
     margin-left: 0px;
     align-items: center;
     padding: 48px 40px 48px;
-    
   }
   .mySkills-boxs {
     width: 264px;
