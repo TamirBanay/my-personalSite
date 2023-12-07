@@ -11,11 +11,17 @@ nav a {
 nav ul {
   list-style: none;
   display: flex;
-  /* justify-content: space-b; */
   padding: 0;
 }
+.ul-scrolled {
+  height: 100%;
+}
 nav li a {
-  font-size: x-large;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #e8f4fb;
 }
 
 .name {
@@ -24,49 +30,44 @@ nav li a {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  text-align: start;
+  align-self: center;
 }
 .tamir-banay-link {
-  color: #344054; /* Black color */
+  color: #344054;
   font-size: 20px;
+  font-weight: 700;
 }
 .tamir-banay-link:hover {
   text-decoration: none;
-  color: #0077b5; /* Color you want on hover, for example, LinkedIn blue */
-}
-
-.nav-scrolled a {
-  color: #344054; /* The color you want after scrolling */
+  color: #0077b5;
 }
 
 .nav-scrolled {
-  background-color: #000;
-  border-bottom: 1px solid var(--palette-neutral-300, #b3b3b3);
   background: var(--white, #fff);
   width: 100%;
-  height: 56px;
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
 }
 
 nav a {
   color: #e8f4fb;
   text-decoration: none;
-  size: 20px;
   font-weight: 500;
-  transition: color 0.3; /* Smooth transition for color change */
+  transition: color 0.3;
 }
 
 nav a:hover {
   text-decoration: underline;
-  color: #0077b5; /* Color you want on hover, for example, LinkedIn blue */
+  color: #0077b5;
 }
 .nav-scrolled a {
   color: #344054;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
   width: 30%;
+}
+.tamir-banay-link-scroll {
+  font-weight: 700;
 }
 
 .routers {
@@ -83,9 +84,9 @@ nav a:hover {
   width: 20%;
   display: flex;
   flex-direction: row;
-  align-self: center;
   justify-content: space-between;
   margin-left: 10%;
+  align-items: center;
 }
 .routers-scrolled :hover {
   text-decoration: none;
@@ -95,42 +96,46 @@ nav a:hover {
   text-decoration: none;
   color: #344054;
 }
+
 @media screen and (max-width: 480px) {
   nav {
-    position: fixed;
-    background-color: #2997f0;
-    margin-left: 0px;
-    padding: 0px 0px 0px;
     width: 100%;
-    height: 68px;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
   }
   .nav-scrolled {
-    background-color: #000;
-    border-bottom: 1px solid var(--palette-neutral-300, #b3b3b3);
-    background: var(--white, #2997f0);
-    width: 100%;
-    height: 56px;
-    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
-  }
-  nav ul {
-    justify-content: space-between;
-    padding: 0px 24px 16px 24px;
-  }
-
-  .name {
-    color: white;
-    width: fit-content;
-    align-self: flex-start;
-  }
-  .menu-icon {
-    /* margin-right: -5%; */
-    align-self: center;
+    background-color: #2997f0;
   }
   .tamir-banay-link {
-    color: #ffffff;
+    color: var(--white, #fff);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 36px */
   }
   .nav-scrolled a {
-    color: #ffffff;
-    align-self: flex-start;
+    color: var(--white, #fff);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 36px */
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav li {
+    padding: 0px 24px;
+  }
+  .name {
+    width: fit-content;
+  }
+  .menu-icon {
+    padding-right: 24px;
   }
 }

@@ -71,16 +71,17 @@
   height: 48px;
   border-radius: 8px;
   padding: 8px 24px;
-  padding: 8px, 24px, 8px, 24px;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  border: solid 2px #344054;
+  border: solid 2px #344054; /* Adjust the color and width as needed for the outline */
   font-size: 18px;
   font-weight: 600;
   color: #25282b;
-  background-color: white;
+  background-color: transparent; /* Ensure background is transparent for the outline effect */
+  cursor: pointer; /* Optional: Changes the cursor to a pointer on hover */
 }
+
 .linkedinButton:hover {
   background-color: #f2f2f2;
 }

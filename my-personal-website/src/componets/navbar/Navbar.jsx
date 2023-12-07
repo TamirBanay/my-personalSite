@@ -40,13 +40,15 @@ function Navbar() {
   }, []);
   return (
     <nav className={hasScrolled ? "nav-scrolled" : ""}>
-      <ul>
+      <ul className={hasScrolled ? "ul-scrolled" : ""}>
         <li className="name">
           <Link
             to="main-intro"
             smooth={true}
             duration={500}
-            className="tamir-banay-link"
+            className={
+              hasScrolled ? "tamir-banay-link-scroll" : "tamir-banay-link"
+            }
           >
             Tamir Banay
           </Link>

@@ -93,9 +93,7 @@ input {
   font-weight: 400;
   line-height: normal;
 }
-#Main svg:hover {
-  fill: #fce57e;
-}
+
 @media screen and (max-width: 480px) {
   .main-ContactMe {
     margin-top: 180%;

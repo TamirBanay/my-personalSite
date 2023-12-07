@@ -47,7 +47,7 @@ function Intro() {
               <button className="cvButton">Download CV</button>
             </a>
             <a href="https://www.linkedin.com/in/tamir-banay-0436b31b2/">
-              <button className="linkedinButton">LinkedIns</button>
+              <button type="" className="linkedinButton">LinkedIn</button>
             </a>
           </div>
         </div>
