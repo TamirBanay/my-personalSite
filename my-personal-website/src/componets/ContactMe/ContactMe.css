@@ -5,7 +5,7 @@
   align-items: center;
   gap: 52px;
   align-self: stretch;
-  padding: 80px 0px;
+  padding: 48px 24px;
   background-color: #f9faff;
   margin-top: 0;
 }
@@ -67,6 +67,9 @@ input {
   font-weight: 500;
   line-height: 150%; /* 27px */
 }
+.send-button:hover {
+  background: var(--palette-blue-500, #0276d5);
+}
 .iconsAndCopyright {
   display: flex;
   flex-direction: column;
@@ -96,6 +99,8 @@ input {
 
 @media screen and (max-width: 480px) {
   .main-ContactMe {
+    padding: 48px 24px;
+
     margin-top: 180%;
   }
   .ContactMe-inputs {
@@ -106,5 +111,10 @@ input {
   }
   .message {
     width: 327px;
+  }
+  label {
+    font-size: 16px;
+
+    font-weight: 500;
   }
 }

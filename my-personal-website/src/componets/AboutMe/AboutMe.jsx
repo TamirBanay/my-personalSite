@@ -15,7 +15,8 @@ function AboutMe() {
           I'm Tamir Banay, a Full Stack / BackEnd / FrontEnd Developer with a
           passion for coding and innovation, eager to grow as a junior developer
           in a dynamic environment.
-          <p />
+        </div>
+        <div className="aboutMe-text-description-sec">
           With a computer science degree and full-stack expertise, I'm seeking a
           role where I can grow and innovate alongside a forward-thinking team.
           Connect with me for dedication to tech and teamwork.
