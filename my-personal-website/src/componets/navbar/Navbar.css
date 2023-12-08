@@ -3,18 +3,27 @@ nav {
   width: 100%;
   z-index: 1000;
   transition: color 0.3s;
-  padding: 0px 120px 0px;
+  height: 56px;
+  /* background-color: red; */
+  /* padding-bottom: 14px; */
+  /* padding-top: 0px; */
 }
 nav a {
-  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+}
+a {
 }
 nav ul {
   list-style: none;
   display: flex;
-  padding: 0;
+  padding: 0px 120px;
+  justify-content: space-between;
 }
 .ul-scrolled {
-  height: 100%;
+  display: flex;
 }
 nav li a {
   font-size: 20px;
@@ -23,14 +32,22 @@ nav li a {
   line-height: 28px;
   color: #e8f4fb;
 }
-
-.name {
-  width: 50%;
+.project-nav {
+  width: 74px;
+}
+.about-nav {
+  width: 54px;
+}
+.contacts-nav {
+  width: 81px;
+}
+.name-nav {
+  width: fit-content;
   color: #344054;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  align-self: center;
+  /* align-content: center; */
 }
 .tamir-banay-link {
   color: #344054;
@@ -44,7 +61,6 @@ nav li a {
 
 .nav-scrolled {
   background: var(--white, #fff);
-  width: 100%;
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -64,29 +80,33 @@ nav a:hover {
   font-size: 20px;
   font-style: normal;
   line-height: 28px;
-  width: 30%;
 }
 .tamir-banay-link-scroll {
   font-weight: 700;
+  text-decoration: none;
+}
+.tamir-banay-link-scroll:hover {
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .routers {
-  font-size: large;
-  width: 318px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   align-self: flex-end;
   gap: 48px;
-  margin-left: 10%;
+  width: auto;
+  justify-content: flex-end;
 }
 .routers-scrolled {
-  font-size: large;
-  width: 20%;
+  font-size: 20px;
+  width: 50%;
   display: flex;
+  gap: 48px;
+
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 10%;
-  align-items: center;
+  justify-content: flex-end;
 }
 .routers-scrolled :hover {
   text-decoration: none;
