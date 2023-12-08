@@ -3,36 +3,45 @@
   flex-direction: row;
   width: 100%;
   background-color: #f9faff;
+  justify-content: space-between;
 }
 .text-left {
-  width: 50%;
-  height: 629px;
+  width: 508px;
+  width: 508px;
   margin-top: 7%;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 .titels {
   color: #2997f0;
   font-weight: 600;
   font-size: 20px;
   line-height: 23.44px;
-  padding-left: 120px;
+  /* padding-left: 120px; */
 }
 .all-text {
   width: 508px;
-  height: 154px;
-  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 32px;
 }
 .first-text {
   color: #344054;
   font-weight: 600;
   font-size: 64px;
   line-height: 76.8px;
-  margin-top: 3%;
+  /* margin-top: 3%; */
 }
 .name-color {
   color: #2997f0;
 }
 .about-intro {
-  margin-top: 34px;
+  /* margin-top: 34px; */
   color: var(--font-medium-emphasis, #828282);
   /* font-family: Roboto; */
   font-size: 24px;
@@ -71,21 +80,22 @@
   height: 48px;
   border-radius: 8px;
   padding: 8px 24px;
-  padding: 8px, 24px, 8px, 24px;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  border: solid 2px #344054;
+  border: solid 2px #344054; /* Adjust the color and width as needed for the outline */
   font-size: 18px;
   font-weight: 600;
   color: #25282b;
-  background-color: white;
+  background-color: transparent; /* Ensure background is transparent for the outline effect */
+  cursor: pointer; /* Optional: Changes the cursor to a pointer on hover */
 }
+
 .linkedinButton:hover {
   background-color: #f2f2f2;
 }
 .img-rigth {
-  width: 50%;
+  width: 768px;
   height: 629px;
 }
 a {
@@ -96,6 +106,17 @@ a {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+    padding-left: 0px;
+  }
+  .text-left {
+    width: 375px;
+    display: flex;
+    padding: 60px 0px 48px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* justify-items: flex-start; */
+    gap: 24px;
   }
   .img-rigth {
     width: 375px;
@@ -112,19 +133,22 @@ a {
   .all-text {
     width: 327px;
     padding-left: 24px;
+    gap: 24px;
   }
   .first-text {
     width: 327px;
     font-size: 52px;
     line-height: 52px;
-    width: 600;
+  }
+  .first-text .name-color {
+    width: 327px; /* Adjust the width to ensure it fits in one line */
+    display: flex;
+    flex-wrap: nowrap; /* This prevents the row from breaking down */
   }
   .img-rigth {
     width: 100%;
   }
   .buttons {
-    gap: 16px;
-    padding-top: 32px;
   }
   .linkedinButton {
     font-weight: 600;
