@@ -20,8 +20,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 23.44px;
-  /* padding-left: 120px; */
-}
+  text-transform: uppercase;}
 .all-text {
   width: 508px;
   display: flex;
