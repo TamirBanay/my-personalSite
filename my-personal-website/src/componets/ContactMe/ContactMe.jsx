@@ -15,10 +15,7 @@ function ContactMe() {
   const moveToGithub = () => {
     window.location.href = "https://github.com/TamirBanay";
   };
-  const moveToWhatsApp = () => {
-    const phoneNumber = "0525908415"; // Your phone number in international format
-    window.location.href = `https://wa.me/${phoneNumber}`;
-  };
+
   return (
     <div className="main-ContactMe">
       <div className="ContactMe-title">

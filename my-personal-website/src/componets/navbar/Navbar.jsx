@@ -10,13 +10,17 @@ import {
   useRecoilState,
   useRecoilValue,
 } from "recoil";
-import { _screenSize } from "../../services/atom";
+import { _screenSize, _menuIsOpen } from "../../services/atom";
 import menuIcon from "../../images/Vector.png";
-
+import MobileMenu from "../Menu/MobileMenu";
 function Navbar() {
   const [screenSize, setScreenSize] = useRecoilState(_screenSize);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useRecoilState(_menuIsOpen);
 
+  const handleMenuIsOpen = () => {
+    setMenuIsOpen(!menuIsOpen);
+  };
   useEffect(() => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 50);
@@ -72,7 +76,9 @@ function Navbar() {
             </li>
           </div>
         ) : (
-          <div className="menu-icon">{<img src={menuIcon} />}</div>
+          <div className="menu-icon">
+            {<img src={menuIcon} onClick={handleMenuIsOpen} />}
+          </div>
         )}
       </ul>
     </nav>
