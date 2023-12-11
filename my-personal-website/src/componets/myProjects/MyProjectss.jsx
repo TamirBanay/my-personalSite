@@ -27,7 +27,7 @@ function myProjects() {
 
       <div className="project">
         <div className="project-text">
-          <div className="project-title">Movie App</div>
+          <div className="project-title">My Movie App</div>
           <div className="project-description">
             The Movie Explorer App combines React and Django to offer users an
             interactive platform for exploring movies, featuring detailed

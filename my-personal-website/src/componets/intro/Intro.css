@@ -20,7 +20,8 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 23.44px;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 .all-text {
   width: 508px;
   display: flex;
@@ -63,7 +64,7 @@
   background-color: #2997f0;
   border: #2997f0;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   font: Roboto;
@@ -106,6 +107,8 @@ a {
     flex-direction: column-reverse;
     width: 100%;
     padding-left: 0px;
+    font-weight: 400;
+
   }
   .text-left {
     width: 100%;
@@ -127,6 +130,7 @@ a {
     padding-left: 24px;
     width: 600;
     size: 20px;
+    font-weight: 600;
     line-height: 23.44px;
   }
   .all-text {
@@ -138,6 +142,8 @@ a {
     width: 327px;
     font-size: 52px;
     line-height: 52px;
+    font-weight: 600;
+
   }
   .first-text .name-color {
     width: 327px; /* Adjust the width to ensure it fits in one line */

@@ -74,6 +74,7 @@ function ContactMe() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              onClick={moveToMail}
             />
           </label>
           <label>
@@ -97,12 +98,14 @@ function ContactMe() {
             src={currentGitHubIcon}
             onMouseEnter={handleGitHubMouseEnter}
             onMouseLeave={handleGitHubMouseLeave}
+            onClick={moveToGithub}
           />
           <img
             className="image-icon-Linkedin"
             src={currentLinkedinIcon}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            onClick={moveToLinkEdin}
           />
           <img
             className="image-icon-mail"
