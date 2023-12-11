@@ -108,7 +108,6 @@ a {
     width: 100%;
     padding-left: 0px;
     font-weight: 400;
-
   }
   .text-left {
     width: 100%;
@@ -143,7 +142,6 @@ a {
     font-size: 52px;
     line-height: 52px;
     font-weight: 600;
-
   }
   .first-text .name-color {
     width: 327px; /* Adjust the width to ensure it fits in one line */
@@ -159,4 +157,10 @@ a {
     font-weight: 600;
     color: #25282b;
   }
+}
+@media screen and (max-width: 1367px) {
+  /* .img-rigth {
+    width: 50%;
+    height: 50%;
+  } */
 }
