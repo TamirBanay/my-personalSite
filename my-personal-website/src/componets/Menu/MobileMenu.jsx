@@ -31,12 +31,15 @@ function Menu() {
     });
   };
 
+  const handleCloseMenu = () => {
+    setMenuIsOpen(false);
+  };
   const handleMenuIsOpen = () => {
     setMenuIsOpen(!menuIsOpen);
   };
   return (
     <div className="main-menu">
-      <div className="background-menu" />
+      <div className="background-menu" onClick={handleCloseMenu} />
       <div className="all-info-menu">
         <div className="header-menu">
           <div className="icon-X-menu">

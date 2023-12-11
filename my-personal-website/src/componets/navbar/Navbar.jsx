@@ -43,7 +43,9 @@ function Navbar() {
     return () => window.removeEventListener("resize", updateScreenSize);
   }, []);
   return (
-    <nav className={hasScrolled ? "nav-scrolled" : ""}>
+    <nav
+      className={menuIsOpen ? "menuOpen" : hasScrolled ? "nav-scrolled" : ""}
+    >
       <ul className={hasScrolled ? "ul-scrolled" : ""}>
         <li className="name">
           <Link

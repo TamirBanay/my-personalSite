@@ -119,6 +119,12 @@ nav a:hover {
     width: 100%;
     display: flex;
   }
+  .menuOpen {
+    width: 100%;
+    display: flex;
+    position: static;
+    background-color: #2997f0;
+  }
   .nav-scrolled {
     background-color: #2997f0;
   }
