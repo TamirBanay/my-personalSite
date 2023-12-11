@@ -72,9 +72,8 @@ a {
   .aboutMe-main {
     display: flex;
     flex-direction: column-reverse;
-    height: 1371px;
     gap: 32px;
-    padding: 0px 24px;
+    padding: 48px 0px;
   }
   .aboutMe-text {
     width: 327px;
@@ -104,6 +103,9 @@ a {
     font-weight: 400;
     line-height: 150%; /* 36px */
   }
+  .aboutMe-text-description-sec {
+    font-weight: 400;
+  }
   a {
     width: 156px;
   }
@@ -112,7 +114,9 @@ a {
     height: 535px;
     align-self: center;
   }
-  .aboutMe-text-button {
+  .button-cv-aboutme {
+    height: 48px;
+    width: 300px;
   }
 }
 /*ipad responsive */

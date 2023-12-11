@@ -26,7 +26,6 @@
   padding: 40px;
   align-items: flex-start;
   justify-content: center;
-  gap: 10px;
   flex: 1 0 0;
   align-self: stretch;
   border-radius: 16px;
@@ -65,7 +64,7 @@
 
   .mySkills-boxs {
     width: 215px;
-    gap: 10px;
+    gap: 32px;
   }
   .boxs {
     height: 295px;
@@ -75,9 +74,8 @@
   }
   .mySkills-list {
     gap: 10px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.3px;
-
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1540px) {
