@@ -30,16 +30,16 @@ function App() {
   };
 
   const handleTouchEnd = () => {
-    const swipeThreshold = 30; // Minimum distance of the swipe to trigger action
+    const swipeThreshold = 100;
     const swipeRight =
       touchEndRef.current > touchStartRef.current + swipeThreshold;
     const swipeLeft =
       touchStartRef.current > touchEndRef.current + swipeThreshold;
 
     if (swipeRight && menuIsOpen) {
-      setMenuIsOpen(false); // Close the menu on swipe right
+      setMenuIsOpen(false);
     } else if (swipeLeft && !menuIsOpen) {
-      setMenuIsOpen(true); // Open the menu on swipe left
+      setMenuIsOpen(true);
     }
   };
   return (
