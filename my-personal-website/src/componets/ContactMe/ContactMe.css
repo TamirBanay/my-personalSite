@@ -37,7 +37,6 @@ label {
   align-items: flex-start;
   gap: 8px;
   font-weight: 500;
-
 }
 input {
   width: 400px;
@@ -136,7 +135,7 @@ input {
   .main-ContactMe {
     padding: 48px 24px;
 
-    margin-top: 180%;
+    margin-top: 190%;
   }
   .ContactMe-inputs {
     align-items: center;

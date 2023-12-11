@@ -21,10 +21,11 @@ function AboutMe() {
           role where I can grow and innovate alongside a forward-thinking team.
           Connect with me for dedication to tech and teamwork.
         </div>
-
-        <a href={myCV} download="Tamir Banay CV.pdf">
-          <button className="aboutMe-text-button">Download CV</button>
-        </a>
+        <div className="button-cv-aboutme">
+          <a href={myCV} download="Tamir Banay CV.pdf">
+            <button className="aboutMe-text-button">Download CV</button>
+          </a>
+        </div>
       </div>
     </div>
   );
