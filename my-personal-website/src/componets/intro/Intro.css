@@ -120,8 +120,11 @@ a {
     gap: 24px;
   }
   .img-rigth {
+    /* margin-left: -150px; */
+    height: 506.52px;
     width: 375px;
-    height: 629px;
+    flex-shrink: 0;
+    align-self: stretch;
   }
   .titels {
     width: 327px;

@@ -1,6 +1,6 @@
 import React from "react";
-import myImg from "../../images/image.png";
-import myImgMobile from "../../images/image-mobile.png";
+import myImg from "../../images/newImg.jpg";
+import myImgMobile from "../../images/newImgMobile.png";
 import "./Intro.css";
 import { useEffect } from "react";
 import myCV from "./Tamir-Banay-FS&Front-end.pdf";
@@ -47,7 +47,9 @@ function Intro() {
               <button className="cvButton">Download CV</button>
             </a>
             <a href="https://www.linkedin.com/in/tamir-banay-0436b31b2/">
-              <button type="" className="linkedinButton">LinkedIn</button>
+              <button type="" className="linkedinButton">
+                LinkedIn
+              </button>
             </a>
           </div>
         </div>

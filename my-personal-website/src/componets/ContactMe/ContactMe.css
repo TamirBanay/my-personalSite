@@ -133,9 +133,11 @@ input {
 
 @media screen and (max-width: 480px) {
   .main-ContactMe {
+    display: flex;
+    flex-direction: column;
     padding: 48px 24px;
 
-    margin-top: 190%;
+    /* margin-top: 190%; */
   }
   .ContactMe-inputs {
     align-items: center;
