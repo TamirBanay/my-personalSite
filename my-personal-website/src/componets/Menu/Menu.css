@@ -52,10 +52,11 @@
   list-style-type: none;
   color: #344054;
   font-feature-settings: "clig" off, "liga" off;
-  font-size: 16px;
+  font-family: roboto;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 150% */
+  font-weight: 500;
+  line-height: 28px; /* 140% */
 }
 .iconsAndCopyright-menu {
   align-items: center;
