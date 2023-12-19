@@ -109,7 +109,7 @@
     align-items: center;
     padding-top: 32px;
     width: 327px;
-    height: 818px;
+    height: fit-content;
     border-radius: 24px;
     gap: 32px;
   }
@@ -124,12 +124,11 @@
 
   .project-text {
     display: flex;
+    width: 268.112px;
     flex-direction: column;
     align-items: flex-start;
-    height: 407px;
-    width: 268.112px;
     gap: 32px;
-    font-size: 40px;
+
     padding: 0px 0px 0px 0px;
     color: #25282b;
   }
