@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "../../images/newImg.jpg";
+import myImg from "../../images/newImg.png";
 import myImgMobile from "../../images/newImgMobile.png";
 import "./Intro.css";
 import { useEffect } from "react";
