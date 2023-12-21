@@ -23,12 +23,12 @@ function Menu() {
     window.location.href = "https://github.com/TamirBanay";
   };
   const handleCloseMenuAndScroll = (target) => {
-    setMenuIsOpen(false);
     scroller.scrollTo(target, {
       duration: 500,
       smooth: true,
-      offset: -70, // Adjust as needed
+      offset: -100, // Adjust as needed
     });
+    setMenuIsOpen(false);
   };
 
   const handleCloseMenu = () => {
