@@ -59,7 +59,8 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 27px */
-  background-color: white;
+  background-color: transparent; /* Ensure background is transparent for the outline effect */
+
 }
 .aboutMe-text-button:hover {
   background-color: #f2f2f2;

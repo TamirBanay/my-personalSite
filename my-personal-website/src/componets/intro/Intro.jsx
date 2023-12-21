@@ -23,6 +23,9 @@ function Intro() {
       document.body.clientWidth;
     setScreenSize(newWidth);
   };
+  const moveToMail = () => {
+    window.location.href = "mailto:banay9329@gmail.com";
+  };
 
   useEffect(() => {
     updateScreenSize();
@@ -41,7 +44,11 @@ function Intro() {
             I'm Tamir Banay, a Full Stack / BackEnd / FrontEnd Developer with a
             passion for coding and innovation, eager to grow as a junior
             developer in a dynamic environment.
+            <div className="intro-mail" onClick={moveToMail}>
+              Email: <span className="name-color">banay9329@gmail.com</span>{" "}
+            </div>
           </div>
+
           <div className="buttons">
             <a href={myCV} download="Tamir Banay CV.pdf">
               <button className="cvButton">Download CV</button>

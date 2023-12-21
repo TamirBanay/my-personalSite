@@ -22,6 +22,11 @@
   line-height: 23.44px;
   text-transform: uppercase;
 }
+.intro-mail {
+  color: #344054;
+  font-weight: 600;
+  font-size: 20px;
+}
 .all-text {
   width: 508px;
   display: flex;
