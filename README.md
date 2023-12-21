@@ -33,7 +33,7 @@ To run this project locally:
 
 Created by Tamir Banay - feel free to contact me!
 
-- Email: [banay9329@gmail.com]
+- Email: banay9329@gmail.com
 - LinkedIn: https://www.linkedin.com/in/tamir-banay-0436b31b2/
 - GitHub: https://github.com/TamirBanay
 
