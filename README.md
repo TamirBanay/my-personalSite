@@ -25,9 +25,10 @@ This is the source code for my personal website. It serves as a portfolio to sho
 To run this project locally:
 
 1. Clone the repository to your local machine.
-2. run npm install
-3. cd to my-personal-website
-4. run npm start
+2. cd to my-personalSite
+3. run npm install
+4. cd to my-personal-website
+5. run npm start
 
 ## Contact
 
