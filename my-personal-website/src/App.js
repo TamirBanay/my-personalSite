@@ -19,6 +19,7 @@ import React, { useState, useRef } from "react";
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useRecoilState(_menuIsOpen);
+  // to swipe and open the menu  ----------------------------------------------------------------
   const touchStartRef = useRef(0);
   const touchEndRef = useRef(0);
   const handleTouchStart = (e) => {
@@ -42,11 +43,14 @@ function App() {
       setMenuIsOpen(true);
     }
   };
+
+  // ----------------------------------------------------------------
   return (
     <div
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
+      // to swipe and open the menu unCommand this functions
+      // onTouchStart={handleTouchStart}
+      // onTouchMove={handleTouchMove}
+      // onTouchEnd={handleTouchEnd}
       className="App"
     >
       {menuIsOpen && <MobileMenu />}
