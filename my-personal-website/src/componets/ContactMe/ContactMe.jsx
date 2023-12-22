@@ -74,7 +74,6 @@ function ContactMe() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              onClick={moveToMail}
             />
           </label>
           <label>
@@ -112,6 +111,7 @@ function ContactMe() {
             src={currentMailIcon}
             onMouseEnter={handleMailMouseEnter}
             onMouseLeave={handleMailMouseLeave}
+            onClick={moveToMail}
           />
         </div>
         <div className="Copyright">Tamir Banay 2024</div>
