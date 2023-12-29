@@ -145,7 +145,7 @@
 
   .project-description {
     width: 268.11px;
-    height: 162px;
+    height: fit-content;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
