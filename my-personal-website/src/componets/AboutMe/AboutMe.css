@@ -19,6 +19,7 @@
   height: 520px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 32px;
   color: #344054;
 }
