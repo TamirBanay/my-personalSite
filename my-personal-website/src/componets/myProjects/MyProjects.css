@@ -55,6 +55,11 @@
   /* margin-bottom: 24px; */
   height: fit-content;
 }
+.project-description-technology-span {
+  color: #344054;
+  font-weight: 600;
+  font-size: 18px;
+}
 .prject-link {
   width: 170px;
   height: 48px;

@@ -37,7 +37,13 @@ function myProjects() {
             The Movie Explorer App combines React and Django to offer users an
             interactive platform for exploring movies, featuring detailed
             information and user profile management.
-            <br /> React, Django, MySQL (Mobile App).
+            <div className="project-description-technology">
+              <span className="project-description-technology-span">
+                {" "}
+                Technology:
+              </span>{" "}
+              React, Django, MySQL.
+            </div>
           </div>
           <div className="Button-git">
             <button className="prject-link" onClick={moveToMyMoviesApp}>
@@ -69,8 +75,14 @@ function myProjects() {
             <div className="project-description">
               PayWise: Centralized digital wallet for refunds, vouchers, and
               discounts. Powered by React and Django, redefining financial
-              management. Your feedback and contributions are valued. React,
-              Django, MySQL (Mobile App).
+              management. Your feedback and contributions are valued.
+              <div className="project-description-technology">
+                <span className="project-description-technology-span">
+                  {" "}
+                  Technology:
+                </span>{" "}
+                React, Django, MySQL (Mobile App).
+              </div>
             </div>
             <div className="Button-git">
               <button className="prject-link" onClick={moveToPayWise}>
@@ -99,7 +111,13 @@ function myProjects() {
               PayWise: Centralized digital wallet for refunds, vouchers, and
               discounts. Powered by React and Django, redefining financial
               management. Your feedback and contributions are valued. <br />
-              React, Django, MySQL (Mobile App).
+              <div className="project-description-technology">
+                <span className="project-description-technology-span">
+                  {" "}
+                  Technology:
+                </span>{" "}
+                React, Django, MySQL (Mobile App).
+              </div>{" "}
             </div>
             <div className="Button-git">
               <button className="prject-link" onClick={moveToPayWise}>
@@ -131,8 +149,13 @@ function myProjects() {
             This project integrates Java and MySQL with the Sakila Database,
             featuring built-in SQL credentials, efficient connectors, and
             real-time database interaction.
-            <br />
-            Java, MySQL.
+            <div className="project-description-technology">
+              <span className="project-description-technology-span">
+                {" "}
+                Technology:
+              </span>{" "}
+              Java, MySQL.
+            </div>
           </div>
           <div className="Button-git">
             <button className="prject-link" onClick={moveToDatabaseSystemTask}>
@@ -165,7 +188,13 @@ function myProjects() {
               strip for visual emergency alerts, designed for the deaf
               community. It offers easy setup, web-based city customization, and
               improved safety.
-              <br /> Arduino ERD, C++
+              <div className="project-description-technology">
+                <span className="project-description-technology-span">
+                  {" "}
+                  Technology:
+                </span>{" "}
+                Arduino, C++.
+              </div>
             </div>
             <div className="Button-git">
               <button className="prject-link" onClick={moveToAlermSystem}>
@@ -193,8 +222,14 @@ function myProjects() {
             <div className="project-description">
               The Home Alert System uses an ESP8266 and LED strip for visual
               alerts, catering to the deaf community with web-based
-              customization and easy setup for improved safety. <br /> Arduino
-              ERD, C++
+              customization and easy setup for improved safety.{" "}
+              <div className="project-description-technology">
+                <span className="project-description-technology-span">
+                  {" "}
+                  Technology:
+                </span>{" "}
+                Arduino, C++.
+              </div>
             </div>
             <div className="Button-git">
               <button className="prject-link" onClick={moveToAlermSystem}>
@@ -225,7 +260,14 @@ function myProjects() {
           <div className="project-description">
             This personal project showcases a full-stack client-server
             architecture, offering a straightforward interface for effective
-            daily task management. React, NodeJs, MySql (Mobile App).
+            daily task management.{" "}
+            <div className="project-description-technology">
+              <span className="project-description-technology-span">
+                {" "}
+                Technology:
+              </span>{" "}
+              React, NodeJs, MySQL (Mobile App).
+            </div>{" "}
           </div>
           <div className="Button-git">
             <button className="prject-link" onClick={moveToTodoList}>
