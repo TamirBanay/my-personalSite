@@ -29,7 +29,7 @@ function myProjects() {
       title: "My Movie App",
       description:
         "The Movie Explorer App combines React and Django to offer users an interactive platform for exploring movies, featuring detailed information and user profile management.",
-      technology: "React, Django, MySQL",
+      technology: "React, Django, MySQL.",
       img: myMovieAppImg,
       onClick: moveToMyMoviesApp,
     },
@@ -38,7 +38,7 @@ function myProjects() {
       title: "PayWise Digital Wallet",
       description:
         "Centralized digital wallet for refunds, vouchers, and discounts. Powered by React and Django, redefining financial management. Your feedback and contributions are valued.",
-      technology: "React, Django, MySQL",
+      technology: "React, Django, MySQL (Mobile App).",
       img: PayWiseImg,
       onClick: moveToPayWise,
     },
@@ -46,7 +46,7 @@ function myProjects() {
       title: "Database System",
       description:
         "This project integrates Java and MySQL with the Sakila Database, featuring built-in SQL credentials, efficient connectors, andreal-time database interaction.",
-      technology: "Java, MySQL",
+      technology: "Java, MySQL.",
       img: DataBaseImg,
       onClick: moveToDatabaseSystemTask,
     },
@@ -54,7 +54,7 @@ function myProjects() {
       title: "Alarm System",
       description:
         "The Home Alert System features an ESP8266 microcontroller and LED strip for visual emergency alerts, designed for the deaf community. It offers easy setup, web-based city customization, and improved safety.",
-      technology: "Arduino, C++",
+      technology: "Arduino, C++.",
       img: alermSystemImg,
       onClick: moveToAlermSystem,
     },
@@ -62,7 +62,7 @@ function myProjects() {
       title: "Todo List",
       description:
         "This personal project showcases a full-stack client-server architecture, offering a straightforward interface for effective daily task management.",
-      technology: "React, NodeJs, MySQL (Mobile App)",
+      technology: "React, NodeJs, MySQL (Mobile App).",
       img: TodoListImg,
       onClick: moveToTodoList,
     },
