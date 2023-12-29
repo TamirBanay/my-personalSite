@@ -212,6 +212,7 @@ function myProjects() {
           <img className="project-img" src={alermSystemImg} />
         </div>
       )}
+      {/* --------------------------------------------- */}
 
       <div className="project">
         <div className="project-text">
@@ -239,7 +240,11 @@ function myProjects() {
             </button>
           </div>
         </div>
-        <img className="project-img-left" src={TodoListImg} />
+        <img
+          // style={{ mixBlendMode: "multiply", backgroundColor: "none" }}
+          className="project-img-left"
+          src={TodoListImg}
+        />
       </div>
     </div>
   );
