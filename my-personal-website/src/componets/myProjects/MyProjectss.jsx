@@ -26,21 +26,28 @@ function myProjects() {
 
   const projects = [
     {
-      title: "My Movie App",
-      description:
-        "The Movie Explorer App combines React and Django to offer users an interactive platform for exploring movies, featuring detailed information and user profile management.",
-      technology: "React, Django, MySQL.",
-      img: myMovieAppImg,
-      onClick: moveToMyMoviesApp,
-    },
-
-    {
       title: "PayWise Digital Wallet",
       description:
         "Centralized digital wallet for refunds, vouchers, and discounts. Powered by React and Django, redefining financial management. Your feedback and contributions are valued.",
       technology: "React, Django, MySQL (Mobile App).",
       img: PayWiseImg,
       onClick: moveToPayWise,
+    },
+    {
+      title: "Todo List",
+      description:
+        "This personal project showcases a full-stack client-server architecture, offering a straightforward interface for effective daily task management.",
+      technology: "React, NodeJs, MySQL (Mobile App).",
+      img: TodoListImg,
+      onClick: moveToTodoList,
+    },
+    {
+      title: "My Movie App",
+      description:
+        "The Movie Explorer App combines React and Django to offer users an interactive platform for exploring movies, featuring detailed information and user profile management.",
+      technology: "React, Django, MySQL.",
+      img: myMovieAppImg,
+      onClick: moveToMyMoviesApp,
     },
     {
       title: "Database System",
@@ -57,14 +64,6 @@ function myProjects() {
       technology: "Arduino, C++.",
       img: alermSystemImg,
       onClick: moveToAlermSystem,
-    },
-    {
-      title: "Todo List",
-      description:
-        "This personal project showcases a full-stack client-server architecture, offering a straightforward interface for effective daily task management.",
-      technology: "React, NodeJs, MySQL (Mobile App).",
-      img: TodoListImg,
-      onClick: moveToTodoList,
     },
   ];
 
