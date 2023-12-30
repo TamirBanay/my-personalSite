@@ -50,20 +50,20 @@ function myProjects() {
       onClick: moveToMyMoviesApp,
     },
     {
-      title: "Database System",
-      description:
-        "This project integrates Java and MySQL with the Sakila Database, featuring built-in SQL credentials, efficient connectors, andreal-time database interaction.",
-      technology: "Java, MySQL.",
-      img: DataBaseImg,
-      onClick: moveToDatabaseSystemTask,
-    },
-    {
       title: "Alarm System",
       description:
         "The Home Alert System features an ESP8266 microcontroller and LED strip for visual emergency alerts, designed for the deaf community. It offers easy setup, web-based city customization, and improved safety.",
       technology: "Arduino, C++.",
       img: alermSystemImg,
       onClick: moveToAlermSystem,
+    },
+    {
+      title: "Database System",
+      description:
+        "This project integrates Java and MySQL with the Sakila Database, featuring built-in SQL credentials, efficient connectors, andreal-time database interaction.",
+      technology: "Java, MySQL.",
+      img: DataBaseImg,
+      onClick: moveToDatabaseSystemTask,
     },
   ];
 
