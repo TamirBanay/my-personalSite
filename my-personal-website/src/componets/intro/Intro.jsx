@@ -5,13 +5,7 @@ import "./Intro.css";
 import { useEffect } from "react";
 import myCV from "./Tamir-Banay-FS&Front-end.pdf";
 
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
+import { useRecoilState } from "recoil";
 import { _screenSize } from "../../services/atom";
 function Intro() {
   const [screenSize, setScreenSize] = useRecoilState(_screenSize);
@@ -35,7 +29,7 @@ function Intro() {
   return (
     <div className="main-intro">
       <div className="text-left">
-        <div className="titels">Full Stack / BackEnd / FrontEnd Developer</div>
+        <div className="titels">Full Stack / FrontEnd / BackEnd Developer</div>
         <div className="all-text">
           <div className="first-text">
             Hello, my name is <span className="name-color">Tamir Banay</span>

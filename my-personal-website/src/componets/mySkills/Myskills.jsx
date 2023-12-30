@@ -17,8 +17,9 @@ function MySkills() {
           <div className="mySkills-title">FrontEnd</div>
           <div className="mySkills-list">
             <li>REACT</li>
-            <li>CSS</li>
             <li>HTML</li>
+            <li>CSS</li>
+            <li>RECOIL</li>
             <li>MUI</li>
             <li>BOOTSTRAP</li>
           </div>
@@ -39,7 +40,7 @@ function MySkills() {
           <div className="mySkills-list">
             <li>PYTHON</li>
             <li>JAVA</li>
-            <li>JAVA-SCRIPT</li>
+            <li>JAVA SCRIPT</li>
             <li>C / C++</li>
             <li>ASSEMBLY</li>
           </div>
