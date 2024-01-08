@@ -73,7 +73,7 @@ function myProjects() {
       title: "Weather App ",
       description:
         "WeatherApp is a personal project designed to demonstrate skills in building React applications and interacting with external APIs. This application allows users to search for and display weather forecasts for different cities.",
-      technology: "React, Weather API.",
+      technology: "React, Weather API. (Mobile App).",
       img: WeatherAppImg,
       onClick: moveToWeatherApp,
     },
