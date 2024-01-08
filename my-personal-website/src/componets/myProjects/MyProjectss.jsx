@@ -49,7 +49,7 @@ function myProjects() {
       title: "My Movie App",
       description:
         "The Movie Explorer App combines React and Django to offer users an interactive platform for exploring movies, featuring detailed information and user profile management.",
-      technology: "React, Django, MySQL.",
+      technology: "React,TMDB API, Django, MySQL.",
       img: myMovieAppImg,
       onClick: moveToMyMoviesApp,
     },
