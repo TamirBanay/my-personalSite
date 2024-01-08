@@ -5,6 +5,7 @@ import alermSystemImg from "./projectImg/alermSystemImg.png";
 import DataBaseImg from "./projectImg/DataBaseImg.png";
 import PayWiseImg from "./projectImg/PayWiseImg.png";
 import TodoListImg from "./projectImg/TodoListImg.png";
+import WeatherAppImg from "./projectImg/WeatherAppImg.png";
 
 function myProjects() {
   const moveToMyMoviesApp = () => {
@@ -23,7 +24,10 @@ function myProjects() {
   const moveToTodoList = () => {
     window.location.href = "https://github.com/TamirBanay/to-do-list";
   };
-
+  const moveToWeatherApp = () => {
+    window.location.href =
+      "https://github.com/TamirBanay/weather-app/tree/main";
+  };
   const projects = [
     {
       title: "PayWise Digital Wallet",
@@ -64,6 +68,14 @@ function myProjects() {
       technology: "Java, MySQL.",
       img: DataBaseImg,
       onClick: moveToDatabaseSystemTask,
+    },
+    {
+      title: "Weather App ",
+      description:
+        "WeatherApp is a personal project designed to demonstrate skills in building React applications and interacting with external APIs. This application allows users to search for and display weather forecasts for different cities.",
+      technology: "React, Weather API.",
+      img: WeatherAppImg,
+      onClick: moveToWeatherApp,
     },
   ];
 
