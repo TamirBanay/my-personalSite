@@ -54,6 +54,14 @@ function myProjects() {
       onClick: moveToMyMoviesApp,
     },
     {
+      title: "Weather App ",
+      description:
+        "WeatherApp is a personal project designed to demonstrate skills in building React applications and interacting with external APIs. This application allows users to search for and display weather forecasts for different cities.",
+      technology: "React, Weather API. (Mobile App).",
+      img: WeatherAppImg,
+      onClick: moveToWeatherApp,
+    },
+    {
       title: "Alarm System",
       description:
         "The Home Alert System features an ESP8266 microcontroller and LED strip for visual emergency alerts, designed for the deaf community. It offers easy setup, web-based city customization, and improved safety.",
@@ -68,14 +76,6 @@ function myProjects() {
       technology: "Java, MySQL.",
       img: DataBaseImg,
       onClick: moveToDatabaseSystemTask,
-    },
-    {
-      title: "Weather App ",
-      description:
-        "WeatherApp is a personal project designed to demonstrate skills in building React applications and interacting with external APIs. This application allows users to search for and display weather forecasts for different cities.",
-      technology: "React, Weather API. (Mobile App).",
-      img: WeatherAppImg,
-      onClick: moveToWeatherApp,
     },
   ];
 
