@@ -19,7 +19,7 @@ function myProjects() {
     window.location.href = "https://github.com/TamirBanay/Database-System-task";
   };
   const moveToAlermSystem = () => {
-    window.location.href = "https://github.com/TamirBanay/Alerm-system";
+    window.location.href = "https://github.com/TamirBanay/Alerm-System";
   };
   const moveToTodoList = () => {
     window.location.href = "https://github.com/TamirBanay/to-do-list";
