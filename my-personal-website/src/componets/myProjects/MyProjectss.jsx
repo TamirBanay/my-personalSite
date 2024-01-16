@@ -76,8 +76,8 @@ function myProjects() {
     {
       title: "Alarm System",
       description:
-        "The Home Alert System features an ESP8266 microcontroller and LED strip for visual emergency alerts, designed for the deaf community. It offers easy setup, web-based city customization, and improved safety.",
-      technology: "Arduino, C++.",
+        "The Home Alert System features an ESP32-WROOM-DA module microcontroller and LED strip for visual emergency alerts, designed for the deaf community. It offers easy setup, web-based city customization, and improved safety.",
+      technology: "Arduino, ESP32-WROOM-DA module, C++.",
       img: alermSystemImg,
       onClick: moveToAlermSystem,
     },
