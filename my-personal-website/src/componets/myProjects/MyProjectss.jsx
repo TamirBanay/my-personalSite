@@ -6,6 +6,7 @@ import DataBaseImg from "./projectImg/DataBaseImg.png";
 import PayWiseImg from "./projectImg/PayWiseImg.png";
 import TodoListImg from "./projectImg/TodoListImg.png";
 import WeatherAppImg from "./projectImg/WeatherAppImg.png";
+import AppleCalculator from "./projectImg/appleCalculator.png";
 
 function myProjects() {
   const moveToMyMoviesApp = () => {
@@ -27,6 +28,9 @@ function myProjects() {
   const moveToWeatherApp = () => {
     window.location.href =
       "https://github.com/TamirBanay/weather-app/tree/main";
+  };
+  const moveToAppleCalculator = () => {
+    window.location.href = "https://github.com/TamirBanay/Apple-Calculator";
   };
   const projects = [
     {
@@ -52,6 +56,14 @@ function myProjects() {
       technology: "React,TMDB API, Django, MySQL.",
       img: myMovieAppImg,
       onClick: moveToMyMoviesApp,
+    },
+    {
+      title: "Apple Calculator",
+      description:
+        "This project is a sleek and user-friendly clone of the Apple Calculator, created to practice and enhance CSS skills. It replicates the classic design and functionality using React with TypeScript for basic arithmetic operations.",
+      technology: "React, Type Script.  (Mobile App).",
+      img: AppleCalculator,
+      onClick: moveToAppleCalculator,
     },
     {
       title: "Weather App ",
