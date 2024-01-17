@@ -93,6 +93,9 @@ function myProjects() {
 
   return (
     <div className="main-projects">
+      <div className="project-main-title">
+        My <span className="name-color">Projects</span>
+      </div>
       {/* if its not mobile */}
       {document.documentElement.clientWidth > 480
         ? projects.map((project, index) => (
