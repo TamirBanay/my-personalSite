@@ -7,7 +7,7 @@ import PayWiseImg from "./projectImg/PayWiseImg.png";
 import TodoListImg from "./projectImg/TodoListImg.png";
 import WeatherAppImg from "./projectImg/WeatherAppImg.png";
 import AppleCalculator from "./projectImg/appleCalculator.png";
-
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 function myProjects() {
   const moveToMyMoviesApp = () => {
     window.location.href = "https://github.com/TamirBanay/My-Movie-App";
@@ -31,6 +31,12 @@ function myProjects() {
   };
   const moveToAppleCalculator = () => {
     window.location.href = "https://github.com/TamirBanay/Apple-Calculator";
+  };
+  const moveToAppleCalculatorDemo = () => {
+    window.location.href = " https://tamirbanay.github.io/Apple-Calculator/";
+  };
+  const moveToWeatherAppDemo = () => {
+    window.location.href = "https://tamirbanay.github.io/weather-app/#/";
   };
   const projects = [
     {
@@ -64,6 +70,7 @@ function myProjects() {
       technology: "React, Type Script.  (Mobile App).",
       img: AppleCalculator,
       onClick: moveToAppleCalculator,
+      onDemo: moveToAppleCalculatorDemo,
     },
     {
       title: "Weather App ",
@@ -72,6 +79,7 @@ function myProjects() {
       technology: "React, Weather API. (Mobile App).",
       img: WeatherAppImg,
       onClick: moveToWeatherApp,
+      onDemo: moveToWeatherAppDemo,
     },
     {
       title: "Alarm System",
@@ -135,6 +143,12 @@ function myProjects() {
                     </svg>
                     View Project{" "}
                   </button>
+                  {project.onDemo && (
+                    <button className="prject-link" onClick={project.onDemo}>
+                      <RemoveRedEyeIcon />
+                      View Demo{" "}
+                    </button>
+                  )}
                 </div>
               </div>
 
@@ -162,7 +176,7 @@ function myProjects() {
                     {project.technology}
                   </div>
                 </div>
-                <div className="Button-git">
+                <div className="Button-git-mobile">
                   <button className="prject-link" onClick={project.onClick}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -178,6 +192,15 @@ function myProjects() {
                     </svg>
                     View Project{" "}
                   </button>
+                  {project.onDemo && (
+                    <button
+                      className="prject-link"
+                      onClick={() => (window.location.href = project.onDemo)}
+                    >
+                      <RemoveRedEyeIcon />
+                      View Demo{" "}
+                    </button>
+                  )}
                 </div>
               </div>
               <img

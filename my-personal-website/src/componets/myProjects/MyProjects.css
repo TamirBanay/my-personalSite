@@ -60,6 +60,17 @@
   font-weight: 600;
   font-size: 18px;
 }
+
+.Button-git {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+.Button-git-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 .prject-link {
   width: 170px;
   height: 48px;
