@@ -193,10 +193,7 @@ function myProjects() {
                     View Project{" "}
                   </button>
                   {project.onDemo && (
-                    <button
-                      className="prject-link"
-                      onClick={() => (window.location.href = project.onDemo)}
-                    >
+                    <button className="prject-link" onClick={project.onDemo}>
                       <RemoveRedEyeIcon />
                       View Demo{" "}
                     </button>
