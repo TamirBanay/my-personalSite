@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-personalSite/static/css/main.fe2ab3f5.css",
-    "main.js": "/my-personalSite/static/js/main.a62bf30a.js",
+    "main.js": "/my-personalSite/static/js/main.7eaf9922.js",
     "static/js/787.295f8b1d.chunk.js": "/my-personalSite/static/js/787.295f8b1d.chunk.js",
     "static/media/appleCalculator.png": "/my-personalSite/static/media/appleCalculator.3b03635ffdf816fbe275.png",
     "static/media/DataBaseImg.png": "/my-personalSite/static/media/DataBaseImg.aa20f69d7eae8ae9c6fd.png",
@@ -17,11 +17,11 @@
     "static/media/fronendImg.png": "/my-personalSite/static/media/fronendImg.36a5e8bf59a4c0f009dc.png",
     "index.html": "/my-personalSite/index.html",
     "main.fe2ab3f5.css.map": "/my-personalSite/static/css/main.fe2ab3f5.css.map",
-    "main.a62bf30a.js.map": "/my-personalSite/static/js/main.a62bf30a.js.map",
+    "main.7eaf9922.js.map": "/my-personalSite/static/js/main.7eaf9922.js.map",
     "787.295f8b1d.chunk.js.map": "/my-personalSite/static/js/787.295f8b1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe2ab3f5.css",
-    "static/js/main.a62bf30a.js"
+    "static/js/main.7eaf9922.js"
   ]
 }
