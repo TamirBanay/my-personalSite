@@ -46,6 +46,7 @@ function myProjects() {
       technology: "React, Django, MySQL (Mobile App).",
       img: PayWiseImg,
       onClick: moveToPayWise,
+      isMobile: true,
     },
     {
       title: "Todo List",
@@ -54,6 +55,7 @@ function myProjects() {
       technology: "React, NodeJs, MySQL (Mobile App).",
       img: TodoListImg,
       onClick: moveToTodoList,
+      isMobile: true,
     },
     {
       title: "My Movie App",
@@ -62,6 +64,7 @@ function myProjects() {
       technology: "React,TMDB API, Django, MySQL.",
       img: myMovieAppImg,
       onClick: moveToMyMoviesApp,
+      isMobile: false,
     },
     {
       title: "Apple Calculator",
@@ -71,6 +74,7 @@ function myProjects() {
       img: AppleCalculator,
       onClick: moveToAppleCalculator,
       onDemo: moveToAppleCalculatorDemo,
+      isMobile: true,
     },
     {
       title: "Weather App ",
@@ -80,6 +84,7 @@ function myProjects() {
       img: WeatherAppImg,
       onClick: moveToWeatherApp,
       onDemo: moveToWeatherAppDemo,
+      isMobile: true,
     },
     {
       title: "Alarm System",
@@ -88,6 +93,7 @@ function myProjects() {
       technology: "Arduino, ESP32-WROOM-DA module, C++.",
       img: alermSystemImg,
       onClick: moveToAlermSystem,
+      isMobile: false,
     },
     {
       title: "Database System",
@@ -96,6 +102,7 @@ function myProjects() {
       technology: "Java, MySQL.",
       img: DataBaseImg,
       onClick: moveToDatabaseSystemTask,
+      isMobile: false,
     },
   ];
 
@@ -143,7 +150,7 @@ function myProjects() {
                     </svg>
                     View Project{" "}
                   </button>
-                  {project.onDemo && (
+                  {project.onDemo && !project.isMobile && (
                     <button className="prject-link" onClick={project.onDemo}>
                       <RemoveRedEyeIcon />
                       View Demo{" "}
@@ -192,7 +199,7 @@ function myProjects() {
                     </svg>
                     View Project{" "}
                   </button>
-                  {project.onDemo && (
+                  {project.onDemo && project.isMobile && (
                     <button className="prject-link" onClick={project.onDemo}>
                       <RemoveRedEyeIcon />
                       View Demo{" "}
