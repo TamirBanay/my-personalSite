@@ -3,7 +3,6 @@ import "./AboutMe.css";
 import myCV from "../intro/Tamir-Banay-FS&Front-end.pdf";
 import myimgBlue from "../../images/myimgBlue.png";
 function AboutMe() {
-  // Component code
   return (
     <div className="aboutMe-main">
       <img className="aboutMe-img" src={myimgBlue} />

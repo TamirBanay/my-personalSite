@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./MyProjects.css";
 import myMovieAppImg from "./projectImg/myMovieAppImg.png";
 import alermSystemImg from "./projectImg/alermSystemImg.png";
@@ -8,7 +8,18 @@ import TodoListImg from "./projectImg/TodoListImg.png";
 import WeatherAppImg from "./projectImg/WeatherAppImg.png";
 import AppleCalculator from "./projectImg/appleCalculator.png";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-function myProjects() {
+import { useRecoilState } from "recoil";
+import {  _screenSize } from "../../services/atom";
+function MyProjects() {
+  const [screenSize, setScreenSize] = useRecoilState(_screenSize);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(document.documentElement.clientWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [screenSize]);
+
   const moveToMyMoviesApp = () => {
     window.location.href = "https://github.com/TamirBanay/My-Movie-App";
   };
@@ -112,7 +123,7 @@ function myProjects() {
         My <span className="name-color">Projects</span>
       </div>
       {/* if its not mobile */}
-      {document.documentElement.clientWidth > 480
+      {screenSize > 480
         ? projects.map((project, index) => (
             <div className="project" key={index}>
               {index % 2 !== 0 && (
@@ -217,4 +228,4 @@ function myProjects() {
     </div>
   );
 }
-export default myProjects;
+export default MyProjects;

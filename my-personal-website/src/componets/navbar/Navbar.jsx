@@ -3,13 +3,7 @@ import { ScrollLink } from "react-scroll";
 import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
+import { useRecoilState } from "recoil";
 import { _screenSize, _menuIsOpen } from "../../services/atom";
 import menuIcon from "../../images/Vector.png";
 import MobileMenu from "../Menu/MobileMenu";
@@ -59,7 +53,7 @@ function Navbar() {
             Tamir Banay
           </Link>
         </li>
-        {document.documentElement.clientWidth > 480 ? (
+        {screenSize > 480 ? (
           <div className={hasScrolled ? "routers-scrolled" : "routers"}>
             <li>
               <Link to="main-projects" smooth={true} duration={500}>
