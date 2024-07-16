@@ -9,7 +9,7 @@ import WeatherAppImg from "./projectImg/WeatherAppImg.png";
 import AppleCalculator from "./projectImg/appleCalculator.png";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import { useRecoilState } from "recoil";
-import {  _screenSize } from "../../services/atom";
+import { _screenSize } from "../../services/atom";
 function MyProjects() {
   const [screenSize, setScreenSize] = useRecoilState(_screenSize);
   useEffect(() => {
@@ -49,6 +49,10 @@ function MyProjects() {
   const moveToWeatherAppDemo = () => {
     window.location.href = "https://tamirbanay.github.io/weather-app/#/";
   };
+  const moviesAppDemo = () => {
+    window.location.href =
+      "https://tamirbanay.github.io/TamirBanay-movies-app-frontend--live/#/null";
+  };
   const projects = [
     {
       title: "PayWise Digital Wallet",
@@ -75,6 +79,7 @@ function MyProjects() {
       technology: "React,TMDB API, Django, MySQL.",
       img: myMovieAppImg,
       onClick: moveToMyMoviesApp,
+      onDemo: moviesAppDemo,
       isMobile: false,
     },
     {
