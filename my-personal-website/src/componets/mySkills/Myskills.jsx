@@ -32,6 +32,8 @@ function MySkills() {
             <li>NODE JS</li>
             <li>EXPRESS</li>
             <li>MySQL</li>
+            <li>MONGO DB</li>
+            <li>DOCKER</li>
           </div>
         </div>
         <div className="mySkills-boxs">
