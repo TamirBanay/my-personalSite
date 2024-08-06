@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./MyProjects.css";
 import myMovieAppImg from "./projectImg/myMovieAppImg.png";
 import alermSystemImg from "./projectImg/alermSystemImg.png";
+import chatMe from "./projectImg/chatMe.png";
 import DataBaseImg from "./projectImg/DataBaseImg.png";
 import PayWiseImg from "./projectImg/PayWiseImg.png";
 import TodoListImg from "./projectImg/TodoListImg.png";
@@ -45,6 +46,9 @@ function MyProjects() {
   const moveToAppleCalculator = () => {
     window.location.href = "https://github.com/TamirBanay/Apple-Calculator";
   };
+  const moveToChatProject = () => {
+    window.location.href = "https://github.com/TamirBanay/Chat-project";
+  };
   const moveToAppleCalculatorDemo = () => {
     window.location.href = " https://tamirbanay.github.io/Apple-Calculator/";
   };
@@ -59,7 +63,10 @@ function MyProjects() {
     window.location.href =
       "https://tamirbanay.github.io/Todo-list-frontend-live/#/login";
   };
-
+  const ChatMeDemo = () => {
+    window.location.href =
+      "https://tamirbanay.github.io/Chat-project/#/chats/9";
+  };
   const projects = [
     {
       title: "PayWise Digital Wallet",
@@ -68,6 +75,17 @@ function MyProjects() {
       technology: "React, Django, MySQL (Mobile App).",
       img: PayWiseImg,
       onClick: moveToPayWise,
+      isMobile: true,
+    },
+    {
+      title: "Chat Me",
+      description:
+        "A real-time chat application for seamless communication. Built with React and Node.js, featuring user authentication, message storage.",
+      technology:
+        "React, Node.js, Express, MongoDB, Socket.IO, Recoil, Material-UI.",
+      img: chatMe,
+      onClick: moveToChatProject,
+      onDemo: ChatMeDemo,
       isMobile: true,
     },
     {
@@ -178,12 +196,14 @@ function MyProjects() {
                 </svg>
                 View Project{" "}
               </button>
-              {project.onDemo && (
-                <button className="prject-link" onClick={project.onDemo}>
-                  <RemoveRedEyeIcon />
-                  View Demo{" "}
-                </button>
-              )}
+              {project.onDemo &&
+                (project.isResponsive ||
+                  (project.isMobile && screenSize <= 480)) && (
+                  <button className="prject-link" onClick={project.onDemo}>
+                    <RemoveRedEyeIcon />
+                    View Demo{" "}
+                  </button>
+                )}
             </div>
           </div>
           {screenSize > 480 && index % 2 === 0 && (
